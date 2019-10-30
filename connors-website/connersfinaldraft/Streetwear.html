@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Vintage</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel="stylesheet" href="Vintage.css">
+<style>
+    body, html {
+        height: 100%;
+        font-family: "Inconsolata", sans-serif;
+    }
+
+    .bgimg {
+        background-position: center;
+        background-size: cover;
+        background-image: url("images/streetwear.bottom.jpg");
+        min-height: 75%;
+    }
+
+    .menu {
+        display: none;
+    }
+</style>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="index.html"><img src="images/wear.png" alt="navPic"></a> </li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Vintage.html">Vintage</a></li>
+        <li><a href="Luxury.html">Luxury</a></li>
+        <li><a href="Streetwear.html">Streetwear</a></li>
+        <li><a href="TechWear.html">Techwear</a></li>
+    </ul>
+    <br>
+</nav>
+
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container " id="home">
+
+
+    <div class="w3-display-middle w3-center">
+        <span class="w3-text-white" style="font-size:90px">Streetwear</span>
+    </div>
+    <div class="w3-display-bottomright w3-center w3-padding-large">
+        <span class="w3-text-white">44.9778° N, 93.2650° W</span>
+    </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand  w3-large">
+
+    <!-- About Container -->
+    <div class="w3-container" id="about">
+        <div class="w3-content" style="max-width:700px">
+            <br>
+            <p>
+                Streetwear, it’s sportswear and military. “The aesthetic has to be a bit sporty, a bit athletic,” he says. It’s skate and hip-hop, but it’s not exclusively any one of these things.
+            </p>
+            <div class="w3-panel w3-leftbar w3-light-grey">
+                <p><i>Below you will see Streetwear fits for purchase or  outfit ideas. <br>
+                    Established Oct 1st 2019</i></p>
+                <p>Created by Connor Aubel  </p>
+            </div>
+<section style="float: left">
+
+            <img src="images/streetwear.background.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+            <article><img class='homeImages' src="../../webi-1911/htdocs/images/streetwear.fit1.jpg" alt="Street Wear"></article>
+            <article><img class='homeImages' src="../../webi-1911/htdocs/images/streetwear.fit2.jpg" alt="Vintage"> </article>
+            <article><img class='homeImages' src="../../webi-1911/htdocs/images/streetwear.fit3.jpeg" alt="Tech Wear"> </article>
+            <article><img class='homeImages' src="../../webi-1911/htdocs/images/streetwear.fit4.jpeg" alt="Luxury"></article>
+            <article><img class='homeImages' src="../../webi-1911/htdocs/images/streetwear.fit5.jpg" alt="Street Wear"></article>
+            <article><img class='homeImages' src="../../webi-1911/htdocs/images/streetwear.fit6.jpg" alt="Vintage"> </article>
+            <article><img class='homeImages' src="../../webi-1911/htdocs/images/streetwear.fit7.jpg" alt="Tech Wear"> </article>
+            <article><img class='homeImages' src="../../webi-1911/htdocs/images/streetwear.fit8.jpg" alt="Luxury"></article>
+            <article><img class='homeImages' src="../../webi-1911/htdocs/images/streetwear.fit9.jpg" alt="Street Wear"></article>
+            <article><img class='homeImages' src="../../webi-1911/htdocs/images/streetwear.fit10.jpg" alt="Vintage"> </article>
+            <article><img class='homeImages' src="../../webi-1911/htdocs/images/streetwear.fit11.jpg" alt="Tech Wear"> </article>
+            <article><img class='homeImages' src="../../webi-1911/htdocs/images/streetwear.fit12.jpg" alt="Tech Wear"> </article>
+</section>
+
+
+
+            <p>44.9778° N, 93.2650° W</p>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+        <p>Click here for all trending brands <a href="https://www.complex.com/style/best-fashion-brands-2019/" title="Trending Brands" target="_blank" class="w3-hover-text-green">Complex</a></p>
+    </footer>
+
+    <script>
+        // Tabbed Menu
+        function openMenu(evt, menuName) {
+            var i, x, tablinks;
+            x = document.getElementsByClassName("menu");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < x.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+            }
+            document.getElementById(menuName).style.display = "block";
+            evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+        }
+        document.getElementById("myLink").click();
+    </script>
+</div>
+</body>
+</html>

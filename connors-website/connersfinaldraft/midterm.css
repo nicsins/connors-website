@@ -1,0 +1,170 @@
+
+#nav-pic{
+    width: 100%;
+    height: 80%;
+}
+
+
+#wrapper{
+    font-family: Arial, Helvetica, sans-serif;
+    alignment: center;
+    width: 1180px;
+    height: 900px;
+    background-color: white;
+    border-color: darkgreen;
+    border-style: solid;
+    border-width: .5em 2em;
+    /*padding:30px;*/
+    box-sizing: border-box;
+    margin:auto;
+    display: block;
+    text-align:center;
+    letter-spacing: 2px;
+}
+
+a{
+    text-decoration:none;
+}
+.shadowBox {
+    box-shadow: 6px 6px grey;
+}
+.shadowBoxYellow {
+    box-shadow: 6px 6px yellow;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+.shadowText {
+    text-shadow: 2px 2px 5px yellow;
+    font-family: "Bodoni 72 Smallcaps" ;
+}
+/* Style the header */
+header {
+    padding: 30px;
+    text-align: center;
+    font-size: 25px;
+    height: 15%;
+    width: 100%;
+    font-family: "";
+    color: antiquewhite;
+
+}
+/*header img {*/
+    /*width: 15%;*/
+    /*height: 15%;*/
+/*}*/
+.homeImages {
+    width:150px;
+    height:150px;
+    border: 3px solid black;
+}
+.homeImages2{
+    width:150px;
+    height:150px;
+}
+.image{
+    width: 25%;
+    height: 100%;
+    float: left;
+}
+article {
+
+    /*370px / 1200px = 30.8333%*/
+    width: 22.37% !important;
+    height: 30%;
+    padding-bottom: 5%;
+    margin-left: 1%;
+    margin-right: .75%;
+    float: left;
+}
+/* Style the list inside the menu */
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav li{
+    display: inline;
+    width:15%;}
+
+
+nav li a {
+    font-size: 30px;
+}
+#street-space{
+    margin-right: 1%;
+}
+
+section{
+    height: 60%;
+    width: 100%;
+
+}
+/* Clear floats after the columns */
+
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+    ;
+}
+
+/* Style the footer */
+footer {
+    float: left;
+    padding: 5px;
+    /*text-align: right;*/
+    height: 25%;
+    width:100%;
+    display: inline-block;
+    font-family: "Bodoni 72 Smallcaps";
+}
+footer ul {
+
+    height: 100%;
+    float: left;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-decoration: none;
+
+
+}
+footer a{
+    padding: 10%;
+}
+
+
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+span {
+    margin: auto;
+    width: 50%;
+    padding: 50px;
+    height: 30px;
+}
+
+nav {
+    height: 25%;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    width: 25%;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: #111;
+}

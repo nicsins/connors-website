@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>About</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel="stylesheet" href="Vintage.css">
+<link rel="stylesheet" href="normalize.css">
+<style>
+    body, html {
+        height: 100%;
+        font-family: "Inconsolata", sans-serif;
+    }
+
+    .bgimg {
+        background-position: center;
+        background-size: cover;
+        background-image: url("../images/navPic.png");
+        min-height: 50%;
+    }
+
+    .menu {
+        display: none;
+    }
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<nav>
+    <ul>
+        <li><a href="index.html"><img src="../images/wear.png" alt="navPic"></a> </li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Vintage.html">Vintage</a></li>
+        <li><a href="Luxury.html">Luxury</a></li>
+        <li id="street-space"><a href="Streetwear.html">Streetwear</a></li>
+        <li><a href="TechWear.html">Techwear</a></li>
+    </ul>
+
+</nav>
+<!-- Header with image -->
+<header class="bgimg w3-display-container " id="home">
+
+
+    <div class="w3-display-middle w3-center">
+        <span class="w3-text-white" style="font-size:90px">Wear It Right</span>
+    </div>
+    <div class="w3-display-bottomright w3-center w3-padding-large">
+        <span class="w3-text-white">44.9778° N, 93.2650° W</span>
+    </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-white  w3-large">
+
+    <section>
+
+        <article><a href="Streetwear.html"><img class='homeImages' src="../images/streetWear.png" alt="Street Wear"></a></article>
+        <article><a href="Vintage.html"><img class='homeImages' src="../images/Vintage.png" alt="Vintage"></a></article>
+        <article><a href="TechWear.html"><img class='homeImages' src="../images/TechWear.png" alt="Tech Wear"></a> </article>
+        <article><a href="Luxury.html"><img class='homeImages' src="../images/Luxury.png" alt="Luxury"></a></article>
+
+        <article>
+            <a href="https://bape.com/index/"><img class='homeImages2' src="../images/bapelogo.png" alt="Supreme"></a>
+        </article>
+
+        <article>
+            <a href="https://www.balenciaga.com/us?gclid=Cj0KCQjwgNXtBRC6ARIsAIPP7RtQ3kZRNIlQWktTRqBLcOw8RCSLRhVanfsQBJnEpLtZjTC9r-4OFT0aAhfXEALw_wcB&tp=62532"><img class='homeImages2' src="../images/Balenciagalogo.png" alt="Luxury"></a>
+        </article>
+
+        <article><a href="https://www.antisocialsocialclub.com/"><img class='homeImages2' src="../images/asclogo.png" alt="Luxury"></a></article>
+
+        <article>
+            <a rel="stylesheet" href="https://www.off---white.com"><img class='homeImages2' src="../images/offwhitelogo.png" alt="Luxury"></a>
+        </article>
+    </section>
+</div>
+<br>
+<footer class=" w3-padding-48 w3-large"style=";float:left; display:inline-block ">
+
+     <ul style="list-style-type:none; " >
+         <li><a href="https://www.facebook.com/"><img src="../images/facebook.png" style='height:25px; float:left;' alt="Facebook"></a></li>
+         <li><a href="https://www.twitter.com/"><img src="../images/twitter.png" style='height:25px; float:left;' alt="Twitter"></a></li>
+         <li><a href="https://www.instagram.com/"><img src="../images/instagram.png" style='height:25px; float:left;' alt="Instagram"></a></li>
+         <li>Click here for all trending brands <a href="https://www.complex.com/style/best-fashion-brands-2019/" title="Trending Brands" target="_blank" class="w3-hover-text-green">Complex</a></li>
+
+     </ul>
+
+
+
+</footer>
+
+
+    <script>
+        // Tabbed Menu
+        function openMenu(evt, menuName) {
+            var i, x, tablinks;
+            x = document.getElementsByClassName("menu");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < x.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+            }
+            document.getElementById(menuName).style.display = "block";
+            evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+        }
+        document.getElementById("myLink").click();
+    </script>
+
+</body>
+</html>
